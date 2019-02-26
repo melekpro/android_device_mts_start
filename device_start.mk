@@ -3,9 +3,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product-if-exists, vendor/lenovo/a369i/a369i-vendor.mk)
+$(call inherit-product-if-exists, vendor/mts/start/start-vendor.mk)
 
-LOCAL_PATH := device/lenovo/a369i
+LOCAL_PATH := device/mts/start
 
 PRODUCT_CHARACTERISTICS := default
 
@@ -143,7 +143,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml	
 
 PRODUCT_PROPERTY_OVERRIDES := \
-	ro.mediatek.version.release=Manish_4586@Lava \
+	ro.mediatek.version.release=DeVviL \
 	ro.mediatek.platform=MT6572 \
 	ro.mediatek.chip_ver=S01 \
 	ro.mediatek.version.branch=KK1.MP1 \

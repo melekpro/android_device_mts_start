@@ -1,7 +1,7 @@
 # inherit from the proprietary version
--include vendor/lenovo/a369i/BoardConfigVendor.mk
+-include vendor/mts/start/BoardConfigVendor.mk
 
-LOCAL_PATH := device/lenovo/a369i
+LOCAL_PATH := device/mts/start
 
 # add by Manish4586 for Camera
 USE_CAMERA_STUB := true
@@ -34,7 +34,7 @@ TARGET_USERIMAGES_USE_EXT4:=true
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := a369i
+TARGET_OTA_ASSERT_DEVICE := start
 
 # MTK HARDWARE
 OLD_KERNEL := true

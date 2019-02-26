@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/device_a369i.mk
+    $(LOCAL_DIR)/device_start.mk

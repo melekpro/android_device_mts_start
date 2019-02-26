@@ -159,8 +159,8 @@ PRODUCT_PROPERTY_OVERRIDES := \
 # USB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.sys.usb.config=mtp,adb
 
-PRODUCT_NAME := full_a369i
-PRODUCT_DEVICE := a369i
+PRODUCT_NAME := full_start
+PRODUCT_DEVICE := start
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 800

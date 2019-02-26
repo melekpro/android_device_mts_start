@@ -72,13 +72,13 @@ BOARD_KERNEL_CMDLINE += \
 	bootopt=64S3,32S1,32S1 \
 	androidboot.selinux=permissive
   
-BOARD_KERNEL_BASE := 0x80000000
+BOARD_KERNEL_BASE := 0x80100000
 BOARD_KERNEL_PAGESIZE := 2048
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
 BOARD_CUSTOM_MKBOOTIMG := mtkbootimg
 BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/bootimg.mk
 BOARD_CUSTOM_BOOTIMG := true
-BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 --tags_offset 0x00000100 --board 1464661620 --base 0x80100000 --mtk 1
+BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 --tags_offset 0x00000100 --board 1464661620 --mtk 1
 
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
 

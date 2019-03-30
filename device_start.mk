@@ -126,6 +126,10 @@ PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
 
+# Gello
+PRODUCT_PACKAGES += \
+    Gello
+
 # Keylayout overrides
 PRODUCT_COPY_FILES_OVERRIDES += \
     system/usr/keylayout/Generic.kl

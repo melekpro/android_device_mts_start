@@ -150,6 +150,10 @@ BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
 # Sepolicy 3.10x.
 POLICYVERS := 29
 
+# Bootanimation optimizations 
+TARGET_BOOTANIMATION_PRELOAD := true
+TARGET_BOOTANIMATION_TEXTURE_CACHE := true
+
 # Seccomp filter
 BOARD_SECCOMP_POLICY += $(LOCAL_PATH)/seccomp
 

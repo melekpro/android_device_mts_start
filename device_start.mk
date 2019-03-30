@@ -146,7 +146,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml	
 
 PRODUCT_PROPERTY_OVERRIDES := \
-	ro.mediatek.version.release=DeVviL \
+	ro.mediatek.version.release=melekPRO \
 	ro.mediatek.platform=MT6572 \
 	ro.mediatek.chip_ver=S01 \
 	ro.mediatek.version.branch=KK1.MP1 \

@@ -1,1 +1,2 @@
-add_lunch_combo aosp_my90ds-userdebug
+add_lunch_combo lineage_a369i-userdebug
+add_lunch_combo lineage_a369i-eng

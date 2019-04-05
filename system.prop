@@ -6,7 +6,7 @@ rild.libpath=/system/lib/mtk-ril.so
 rild.libargs=-d /dev/ttyC0
 
 # LCD Density
-ro.sf.lcd_density=280
+ro.sf.lcd_density=220
 						   
 ro.opengles.version=131072
 

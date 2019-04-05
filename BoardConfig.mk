@@ -42,11 +42,11 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # kernel stuff
-#BOARD_CUSTOM_BOOTIMG_MK :=
+BOARD_CUSTOM_BOOTIMG_MK := device/lenovo/a369i/tools/bootimg.mk
 MTK_PLATFORM := mt6572
 MTK_PROJECT := a369i
-#TARGET_KERNEL_SOURCE := kernel/lenovo/a369i
-#TARGET_KERNEL_CONFIG := a369i_defconfig
+TARGET_KERNEL_SOURCE := kernel/lenovo/a369i
+TARGET_KERNEL_CONFIG := a369i_defconfig
 #BOARD_KERNEL_CMDLINE :=
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 --tags_offset 0x00000100 --board 1464661620 --mtk 1
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
@@ -94,8 +94,12 @@ WIFI_DRIVER_FW_PATH_STA:=P2P
 #USE_CUSTOM_AUDIO_POLICY := 1
 
 
-
+# NINJA is enabled for fasted building
+# Set 'false' to disable use NINJA
 USE_NINJA=false
+
+# Malloc
+MALLOC_SVELTE := true
 
 #Mediatek flags
 BOARD_HAS_MTK_HARDWARE := true
@@ -126,10 +130,13 @@ BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril/
 TARGET_USERIMAGES_USE_EXT4:=true
 USE_CAMERA_STUB := true
 
-
 # SELinux
-BOARD_SEPOLICY_DIRS += \
-    $(LOCAL_PATH)/sepolicy
+#BOARD_SEPOLICY_DIRS += \
+#    device/lenovo/a369i/sepolicy
     
+# Symbols
+LINKER_FORCED_SHIM_LIBS := /system/lib/libcam_utils.so|libshim_atomic.so
+LINKER_FORCED_SHIM_LIBS += /system/lib/librilmtk.so|libshim_ril.so
 
+# Hack for build
 $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)

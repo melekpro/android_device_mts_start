@@ -96,7 +96,7 @@ WIFI_DRIVER_FW_PATH_STA:=P2P
 
 # NINJA is enabled for fasted building
 # Set 'false' to disable use NINJA
-USE_NINJA=false
+USE_NINJA := true
 
 # Malloc
 MALLOC_SVELTE := true

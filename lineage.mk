@@ -8,7 +8,7 @@ PRODUCT_LOCALES := en_US ru_RU
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Call device specific makefile
-$(call inherit-product, device/lenovo/a369i/device.mk)
+$(call inherit-product, device/lenovo/a369i/device_a369i.mk)
 
 LOCAL_PATH := device/lenovo/a369i
 

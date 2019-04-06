@@ -77,7 +77,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.recovery.mt6572.rc:/init.recovery.mt6572.rc \
     $(LOCAL_PATH)/rootdir/ueventd.mt6572.rc:root/ueventd.mt6572.rc \
     $(LOCAL_PATH)/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab \
-    $(LOCAL_KERNEL):kernel
+    $(LOCAL_PATH):/kernel
 
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
